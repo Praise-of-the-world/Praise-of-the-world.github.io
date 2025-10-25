@@ -1,10 +1,10 @@
 // 商品配置
 const products = [
-    { id: 1, name: "特级小麦粉", basePrice: 40.0, volatility: 0.15 },
-    { id: 2, name: "大豆油", basePrice: 75.0, volatility: 0.12 },
-    { id: 3, name: "优质大米", basePrice: 55.0, volatility: 0.1 },
+    { id: 1, name: "小麦粉", basePrice: 40.0, volatility: 0.15 },
+    { id: 2, name: "油", basePrice: 75.0, volatility: 0.12 },
+    { id: 3, name: "大米", basePrice: 55.0, volatility: 0.1 },
     { id: 4, name: "玉米", basePrice: 28.0, volatility: 0.18 },
-    { id: 5, name: "白糖", basePrice: 32.0, volatility: 0.2 }
+    { id: 5, name: "糖", basePrice: 32.0, volatility: 0.2 }
 ];
 
 // 存储当日价格数据
