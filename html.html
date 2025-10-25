@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日价格浮动表</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .price-table {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .price-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .price-table th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        .price-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .price-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        .price-up { color: #e74c3c; }
+        .price-down { color: #27ae60; }
+        .last-update {
+            text-align: center;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 商品每日价格浮动表</h1>
+    <div class="price-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>商品名称</th>
+                    <th>价格</th>
+                    <th>更新日期</th>
+                    <th>涨跌幅</th>
+                </tr>
+            </thead>
+            <tbody id="priceTableBody">
+                <!-- 价格行将由JavaScript动态生成 -->
+            </tbody>
+        </table>
+    </div>
+    <div class="last-update" id="lastUpdate"></div>
+
+    <script src="price-simulator.js"></script>
+</body>
+</html>
